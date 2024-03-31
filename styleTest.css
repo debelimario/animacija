@@ -1,0 +1,28 @@
+h1 {
+    color: blue;
+    font-size: 75px;
+}
+
+#title {
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    white-space: pre;
+    overflow: hidden;
+    letter-spacing: 0.20rem;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 680px;
+}
+
+#title {
+    animation: animated-text 2s steps(11, end) 0.5s 1 normal both, animated-cursor 750ms steps(11, end) infinite;
+}
+
+@keyframes animated-text {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 680px;
+    }
+}
